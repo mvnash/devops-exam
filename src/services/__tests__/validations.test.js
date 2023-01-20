@@ -23,7 +23,7 @@ describe("validations tests suites - isEmpty", () => {
 describe("validations tests suites - isValidGamerTag", () => {
     test("should return boolean", () => {
         const result = isValidGamerTag("Maxime2003");
-        expect(typeof(result)).toEqual("boolean");
+        expect(typeof result).toEqual("boolean");
     });
 
     test("should return true if the string is >= 8", () => {
