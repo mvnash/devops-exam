@@ -35,4 +35,14 @@ describe("validations tests suites - isValidGamerTag", () => {
         const result = isValidGamerTag("Maxime");
         expect(result).toEqual(false);
     });
+
+    test("should return true if the string contains a special caracter", () => {
+        const result = isValidGamerTag("Maxi#me2003");
+        expect(result).toEqual(true);
+    });
+
+    test("should return false if the string doesn't contains a special caracter", () => {
+        const result = isValidGamerTag("Maxime2003");
+        expect(result).toEqual(false);
+    });
 });
