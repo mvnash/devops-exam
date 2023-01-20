@@ -25,4 +25,9 @@ describe("validations tests suites - isValidGamerTag", () => {
         const result = isValidGamerTag("Maxime2003");
         expect(typeof(result)).toEqual("boolean");
     });
+
+    test("should return true if the string is > 8", () => {
+        const result = isValidGamerTag("Maxime2003");
+        expect(result).toEqual(true);
+    });
 });
