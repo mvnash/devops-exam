@@ -3,7 +3,9 @@
 const isEmpty = (label) => !label || label.length === 0;
 
 function isValidGamerTag(nameTag){
-    return false;
+    if(nameTag.length<8) return false;
+    
+    return true;
 }
 
 exports.isEmpty = isEmpty;
