@@ -18,8 +18,6 @@ describe("validations tests suites - isEmpty", () => {
     });
 });
 
-// TODO: Create tests suite for validation function
-
 describe("validations tests suites - isValidGamerTag", () => {
     test("should return boolean", () => {
         const result = isValidGamerTag("Maxime2003");
